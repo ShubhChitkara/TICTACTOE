@@ -44,6 +44,7 @@
     color: white;
     font-size: 50px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -78,4 +79,9 @@ footer {
     animation-iteration-count: 1;
     animation-direction: alternate;
     transform: scale(1.5,1.5);
+}
+.winnerDeclaration{
+    color: black;
+    font-size: 30px;
+    font-weight: 800;
 }
