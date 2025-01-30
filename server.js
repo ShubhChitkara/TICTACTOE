@@ -1,19 +1,25 @@
-let playerSymbol = {
-  player1: "X",
-  player2: "O",
-};
-let gameBoard = [
-  ["", "", ""],
-  ["", "", ""],
-  ["", "", ""],
-];
-function playGame(player1, player2) {
-  //this function will alternate the players turn
-  //ask them which block they want to choose on gameboard
-  //and then changes the specific block value to assigned 
-  //playerSymbol
-}
-function winChecker(){
-    if(gameBoard[i][i])
+const buttons=document.querySelectorAll(".button");
+const resetbtn=document.querySelector(".reset");
+const winningPattern=[[1,2,3],[4,5,6],[7,8,9],[1,5,9],[1,4,7],[2,5,8],[3,6,9],[3,5,7]];
+let turn=true;
+//true for O false for X
+buttons.forEach((button)=>{
+  button.addEventListener("click",()=>{
+    if(turn){
+      turn=false;
+      console.log("Button is pressed");
+      button.innerHTML="O";
+    }
+    else{
+      turn=true;
+      console.log("Button is pressed");
+      button.innerHTML="X";
+    }
+  })
+})
 
-}
+resetbtn.addEventListener("click",()=>{
+  buttons.forEach((button)=>{
+    button.innerHTML="";
+  })
+})

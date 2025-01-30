@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #F8E7F6;
+    font-family: "Roboto", serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15vh;
+}
+
+.tictactoe {
+    text-align: center;
+    color: #4B164C;
+    font-weight: 900;
+    font-size: 5vh;
+    margin-top: 2vh;
+}
+
+.gameBoard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 130px 130px 130px;
+    grid-template-rows: 130px 130px 130px;
+    gap: 5px;
+}
+
+.button {
+    border: none;
+    background-color: aqua;
+    border-radius: 10px;
+    color: white;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: #DD88CF;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.reset {
+    padding: 20px 30px;
+    color: #4B164C;
+    border: none;
+    background-color: white;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+@keyframes resetbtn {
+    from {
+        transform: scale(1,1);
+    }
+
+    to {
+        transform: scale(1.5,1.5);
+    }
+}
+.reset:hover {
+    animation-duration: 2s;
+    animation-name: resetbtn;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    transform: scale(1.5,1.5);
+}
