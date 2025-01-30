@@ -14,7 +14,7 @@ buttons.forEach((button)=>{
       turn=true;
       console.log("Button is pressed");
       button.innerHTML="X";
-    }
+    }button.disabled=true;
   })
 })
 
@@ -23,3 +23,4 @@ resetbtn.addEventListener("click",()=>{
     button.innerHTML="";
   })
 })
+
